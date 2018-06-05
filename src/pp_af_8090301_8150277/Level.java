@@ -15,6 +15,8 @@ import game.abstractClasses.LevelAbstract;
  */
 public class Level extends LevelAbstract{
 
+    private String level = "";
+    
     @Override
     public void loadLevel(String string) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -22,12 +24,12 @@ public class Level extends LevelAbstract{
 
     @Override
     public String getName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return level;
     }
 
     @Override
     public void setName(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.level = string;
     }
 
     @Override

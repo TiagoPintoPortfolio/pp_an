@@ -13,24 +13,27 @@ import game.abstractClasses.GameBlockAbstract;
  */
 public class GameBlock extends GameBlockAbstract{
 
+    private int ballposX = 50;
+    private int ballposY = 50;
+    
     @Override
     public void setX(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.ballposX = i;
     }
 
     @Override
     public int getX() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return ballposX;
     }
 
     @Override
     public void setY(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.ballposY = i;
     }
 
     @Override
     public int getY() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return ballposY;
     }
     
 }
