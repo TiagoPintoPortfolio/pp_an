@@ -12,35 +12,39 @@ import game.abstractClasses.BarrierAbstract;
  * @author Tiago Pinto
  */
 public class Barrier extends BarrierAbstract{
+    
+    private int speed = 10;
+    private int paddleX = 5;
+    private int paddleY = 5;
 
     @Override
     public int getSpeed() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return speed;
     }
 
     @Override
     public void setSpeed(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.speed = i;
     }
 
     @Override
     public void setX(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.paddleX = i;
     }
 
     @Override
     public int getX() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return paddleX;
     }
 
     @Override
     public void setY(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.paddleY = i;
     }
 
     @Override
     public int getY() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return paddleY;
     }
     
 }

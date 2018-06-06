@@ -19,7 +19,7 @@ public class Level extends LevelAbstract{
 
     private String level = "";
     private int[][] bricks;
-    private int numberBricks;
+    private int numberBricks = 1;
     private String brickPath = "pp_af_8090301_8150277.levels/brick.png";
     
     @Override
