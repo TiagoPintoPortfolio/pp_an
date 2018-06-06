@@ -13,27 +13,27 @@ import game.abstractClasses.GameBlockAbstract;
  */
 public class GameBlock extends GameBlockAbstract{
 
-    private int ballposX = 50;
-    private int ballposY = 50;
+    private int blockX = 50;
+    private int blockY = 50;
     
     @Override
     public void setX(int i) {
-        this.ballposX = i;
+        this.blockX = i;
     }
 
     @Override
     public int getX() {
-        return ballposX;
+        return blockX;
     }
 
     @Override
     public void setY(int i) {
-        this.ballposY = i;
+        this.blockY = i;
     }
 
     @Override
     public int getY() {
-        return ballposY;
+        return blockY;
     }
     
 }

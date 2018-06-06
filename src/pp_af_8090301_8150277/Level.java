@@ -8,6 +8,8 @@ package pp_af_8090301_8150277;
 import game.abstractClasses.BallAbstract;
 import game.abstractClasses.BarrierAbstract;
 import game.abstractClasses.LevelAbstract;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  *
@@ -16,6 +18,9 @@ import game.abstractClasses.LevelAbstract;
 public class Level extends LevelAbstract{
 
     private String level = "";
+    private int[][] bricks;
+    private int numberBricks;
+    private String brickPath = "pp_af_8090301_8150277.levels/brick.png";
     
     @Override
     public void loadLevel(String string) {
@@ -34,22 +39,22 @@ public class Level extends LevelAbstract{
 
     @Override
     public int[][] getBricks() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return bricks;
     }
 
     @Override
     public void setBricks(int[][] ints) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.bricks = ints;
     }
 
     @Override
     public int getNumberBricks() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return numberBricks;
     }
 
     @Override
     public void setNumberBricks(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.numberBricks = i;
     }
 
     @Override
@@ -74,12 +79,12 @@ public class Level extends LevelAbstract{
 
     @Override
     public String getBrickImageFilePath() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return brickPath;
     }
 
     @Override
     public void setBrickImageFilePath(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.brickPath = string;
     }
     
 }

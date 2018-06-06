@@ -13,54 +13,61 @@ import game.abstractClasses.BallAbstract;
  */
 public class Ball extends BallAbstract{
 
+    private int ballXdir = 25;
+    private int ballYdir = 25;
+    private int ballX = 50;
+    private int ballY = 50;
+    private int speed = 50;
+    
+    
     @Override
     public void setXDir(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.ballXdir = i;
     }
 
     @Override
     public void setYDir(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.ballYdir = i;
     }
 
     @Override
     public int getXDir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return ballXdir;
     }
 
     @Override
     public int getYDir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return ballYdir;
     }
 
     @Override
     public int getSpeed() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return speed;
     }
 
     @Override
     public void setSpeed(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.speed = i;
     }
 
     @Override
     public void setX(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.ballX = i;
     }
 
     @Override
     public int getX() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return ballX;
     }
 
     @Override
     public void setY(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.ballY = i;
     }
 
     @Override
     public int getY() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return ballY;
     }
     
 }

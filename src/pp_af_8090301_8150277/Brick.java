@@ -12,6 +12,9 @@ import game.abstractClasses.BrickAbstract;
  * @author Tiago Pinto
  */
 public class Brick extends BrickAbstract{
+    
+    private int brickX = 100;
+    private int brickY = 100;
 
     @Override
     public boolean isDestroyed() {
@@ -30,7 +33,7 @@ public class Brick extends BrickAbstract{
 
     @Override
     public int getX() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return brickX;
     }
 
     @Override
