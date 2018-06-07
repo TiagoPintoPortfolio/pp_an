@@ -17,14 +17,15 @@ import java.nio.file.Paths;
  */
 public class Level extends LevelAbstract{
 
-    private String level = "";
+    private String level = "pp_af_8090301_8150277.levels/level0.json";
     private int[][] bricks;
     private int numberBricks = 1;
     private String brickPath = "pp_af_8090301_8150277.levels/brick.png";
     
     @Override
     public void loadLevel(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        this.level = string;
     }
 
     @Override

@@ -18,27 +18,27 @@ import game.interfaces.PlayerContract;
  */
 public class Board extends BoardAbstract {
 
+    Player p = new Player();
+    Level l = new Level();
     
     @Override
     public PlayerContract getPlayer() {
-     
-        return getPlayer();
-        
+        return p;    
     }
 
     @Override
     public void setPlayer(PlayerContract pc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.p =  (Player) pc;
     }
 
     @Override
     public ListContract getLevels() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (ListContract) l;
     }
 
     @Override
     public void setLevels(ListContract lc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.l = (Level) lc;
     }
 
     @Override
