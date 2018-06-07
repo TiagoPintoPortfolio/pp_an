@@ -9,6 +9,7 @@ import game.abstractClasses.BoardAbstract;
 import game.abstractClasses.BrickAbstract;
 import game.abstractClasses.LevelAbstract;
 import game.colections.ListContract;
+import game.exceptions.NoBricksException;
 import game.interfaces.ClassificationContract;
 import game.interfaces.PlayerContract;
 
@@ -18,8 +19,17 @@ import game.interfaces.PlayerContract;
  */
 public class Board extends BoardAbstract {
 
-    Player p = new Player();
-    Level l = new Level();
+    private Player p = new Player();
+    private Level l = new Level();
+    private Brick[] brick = new Brick[6];
+    private Ball ball;
+    private Barrier barrier;
+
+    public Board() throws NoBricksException {
+        super();
+    }
+    
+    
     
     @Override
     public PlayerContract getPlayer() {

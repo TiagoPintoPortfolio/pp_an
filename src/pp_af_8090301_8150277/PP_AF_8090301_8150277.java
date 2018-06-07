@@ -23,6 +23,9 @@ public class PP_AF_8090301_8150277 {
      */
     public static void main(String[] args) throws NoBricksException, InterruptedException {
         
+        
+        Board b = new Board();
+        
         Game game = new Game(b);
         
         game.initUI();

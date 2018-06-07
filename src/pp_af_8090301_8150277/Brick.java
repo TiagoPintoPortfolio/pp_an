@@ -15,10 +15,13 @@ public class Brick extends BrickAbstract{
     
     private int brickX = 100;
     private int brickY = 100;
-
+    private boolean destroyed;
+    
+    
     @Override
     public boolean isDestroyed() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        return destroyed;
     }
 
     @Override
