@@ -18,11 +18,12 @@ import game.interfaces.PlayerContract;
  */
 public class Board extends BoardAbstract {
 
-    private String name = "";
     
     @Override
     public PlayerContract getPlayer() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+     
+        return getPlayer();
+        
     }
 
     @Override

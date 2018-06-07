@@ -5,6 +5,7 @@
  */
 package pp_af_8090301_8150277;
 
+import game.abstractClasses.BoardAbstract;
 import game.exceptions.NoBricksException;
 import game.interfaces.ClassificationContract;
 import game.main.Game;
@@ -15,23 +16,23 @@ import game.main.Game;
  */
 public class PP_AF_8090301_8150277 {
 
+    private static BoardAbstract b;
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) throws NoBricksException, InterruptedException {
-        //TESTE
-        System.out.println("OLA GIT");
         
-        System.out.println("HELLO GIT TIAGO");
+        Game game = new Game(b);
         
-        System.out.println("GIT FINAL");
-        
-        /*Game game = new Game(b);
         game.initUI();
+        
         game.waitUntilClosed();
+        
         ClassificationContract classification = game.getLastClassification();
+        
         System.out.println(classification.toString());
-        */
+        
         
         
     }

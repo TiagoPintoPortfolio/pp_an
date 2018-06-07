@@ -6,17 +6,21 @@
 package pp_af_8090301_8150277;
 
 import game.abstractClasses.BarrierAbstract;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 /**
  *
  * @author Tiago Pinto
  */
-public class Barrier extends BarrierAbstract{
+public class Barrier extends BarrierAbstract implements KeyListener, ActionListener{
     
     private int speed = 10;
     private int paddleX = 5;
     private int paddleY = 5;
-
+    
     @Override
     public int getSpeed() {
         return speed;
@@ -46,5 +50,24 @@ public class Barrier extends BarrierAbstract{
     public int getY() {
         return paddleY;
     }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+   public void keyPressed(){
+   
+   
+   }
+   
+   public void keyReleased(){
+   
+   }
     
 }
