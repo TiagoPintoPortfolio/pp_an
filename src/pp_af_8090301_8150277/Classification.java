@@ -24,7 +24,7 @@ public class Classification implements ClassificationContract{
 
     @Override
     public void setLevel(String string) {
-        this.setLevel(string);
+        //this.setLevel(string);
     }
 
     @Override

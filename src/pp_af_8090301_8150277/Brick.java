@@ -19,14 +19,13 @@ public class Brick extends BrickAbstract{
     
     
     @Override
-    public boolean isDestroyed() {
-        
+    public boolean isDestroyed() {    
         return destroyed;
     }
 
     @Override
     public void setDestroyed(boolean bln) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.destroyed = bln;
     }
 
     @Override

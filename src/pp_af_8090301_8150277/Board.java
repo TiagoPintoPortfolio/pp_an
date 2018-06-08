@@ -30,7 +30,6 @@ public class Board extends BoardAbstract {
     }
     
     
-    
     @Override
     public PlayerContract getPlayer() {
         return p;    

@@ -35,8 +35,7 @@ public class PP_AF_8090301_8150277 {
         ClassificationContract classification = game.getLastClassification();
         
         System.out.println(classification.toString());
-        
-        
+           
         
     }
     
