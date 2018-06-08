@@ -12,6 +12,7 @@ import game.colections.ListContract;
 import game.exceptions.NoBricksException;
 import game.interfaces.ClassificationContract;
 import game.interfaces.PlayerContract;
+import java.util.Arrays;
 
 /**
  *
@@ -24,6 +25,66 @@ public class Board extends BoardAbstract {
     private Brick[] brick = new Brick[6];
     private Ball ball;
     private Barrier barrier;
+    
+    
+    private ListContract lc = new ListContract() {
+        
+        private Object objects[];
+        
+        @Override
+        public boolean addObject(Object o) {
+            int tam = this.size();
+
+        if (tam == this.objects.length){
+            return false;
+
+        }else{
+
+            this.objects[tam] = new Object();
+            return true;
+        }
+        }
+
+        @Override
+        public Object removeObject(int i) {
+             int size = objects.length;
+
+        Object elemDel = 5;
+
+        for (i = 0; i < size; i++) {
+
+            if (objects[i] == elemDel) {
+                
+                Arrays.toString(objects);
+            }
+        }
+
+        return true;
+        }
+
+        @Override
+        public Object getObject(int i) {
+            return i;
+        }
+
+        @Override
+        public int findObject(Object o) {
+            for (int i = 0; i<this.size(); i++) {
+
+            if (this.objects[i].equals(o)) {
+
+                return i;
+            }
+        }
+
+        return -1;
+        }
+
+        @Override
+        public int size() {
+            return size();
+        }
+    };
 
     public Board() throws NoBricksException {
         super();
@@ -42,7 +103,7 @@ public class Board extends BoardAbstract {
 
     @Override
     public ListContract getLevels() {
-        return (ListContract) l;
+        return lc;
     }
 
     @Override
@@ -52,7 +113,7 @@ public class Board extends BoardAbstract {
 
     @Override
     public void addLevel(LevelAbstract la) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        l.loadLevel(TOOL_TIP_TEXT_KEY);
     }
 
     @Override
