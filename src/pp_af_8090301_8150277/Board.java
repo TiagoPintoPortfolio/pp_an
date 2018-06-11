@@ -20,12 +20,14 @@ import java.util.Arrays;
  */
 public class Board extends BoardAbstract {
 
-    private Player p = new Player();
-    private Level l = new Level();
+    //private Player p = new Player();
+    //private Level l = new Level();
     private Brick[] brick = new Brick[6];
     private Ball ball;
     private Barrier barrier;
     private Classification classification;
+    private Player player;
+    private Level level;
     
     
     private ListContract lc = new ListContract() {
@@ -85,6 +87,13 @@ public class Board extends BoardAbstract {
         public int size() {
             return size();
         }
+
+//        @Override
+//        public String toString() {
+//            return "{" + "objects=" + objects + '}';
+//        }
+        
+        
     };
 
     public Board() throws NoBricksException {
@@ -94,27 +103,32 @@ public class Board extends BoardAbstract {
     
     @Override
     public PlayerContract getPlayer() {
-        return p;    
+        //return p;    
+        return player;
     }
 
     @Override
     public void setPlayer(PlayerContract pc) {
-        this.p =  (Player) pc;
+        //this.p =  (Player) pc;
+        this.player = (Player) pc;
     }
 
     @Override
     public ListContract getLevels() {
-        return lc;
+        //return lc;
+        return (ListContract) level;
     }
 
     @Override
     public void setLevels(ListContract lc) {
-        this.l = (Level) lc;
+        //this.l = (Level) lc;
+        this.level = (Level) lc;
     }
 
     @Override
     public void addLevel(LevelAbstract la) {
-        l.loadLevel(TOOL_TIP_TEXT_KEY);
+        //l.loadLevel(TOOL_TIP_TEXT_KEY);
+        level.loadLevel(TOOL_TIP_TEXT_KEY);
     }
 
     @Override
