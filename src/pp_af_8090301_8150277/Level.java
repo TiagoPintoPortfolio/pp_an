@@ -27,6 +27,8 @@ public class Level extends LevelAbstract{
     private int[][] bricks;
     private int numberBricks = 1;
     private String brickPath = "pp_af_8090301_8150277.levels/brick.png";
+    private Ball ball;
+    private Barrier paddle;
     
     @Override
     public void loadLevel(String string) {
@@ -114,22 +116,22 @@ public class Level extends LevelAbstract{
 
     @Override
     public BallAbstract getBall() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return ball;
     }
 
     @Override
     public void setBall(BallAbstract ba) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.ball = (Ball) ba;
     }
 
     @Override
     public BarrierAbstract getPaddle() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return paddle;
     }
 
     @Override
     public void setPaddle(BarrierAbstract ba) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.paddle = (Barrier) ba;
     }
 
     @Override

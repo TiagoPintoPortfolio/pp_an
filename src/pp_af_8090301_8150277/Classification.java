@@ -17,6 +17,8 @@ public class Classification implements ClassificationContract{
     Level l = new Level();
     Player p = new Player();
     
+    //private Level level;
+    
     @Override
     public String getLevel() {
         return l.getName();

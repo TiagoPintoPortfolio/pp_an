@@ -30,7 +30,7 @@ public class Brick extends BrickAbstract{
 
     @Override
     public void setX(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.brickX = i;
     }
 
     @Override
@@ -40,12 +40,12 @@ public class Brick extends BrickAbstract{
 
     @Override
     public void setY(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.brickY = i;
     }
 
     @Override
     public int getY() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return brickX;
     }
     
 }

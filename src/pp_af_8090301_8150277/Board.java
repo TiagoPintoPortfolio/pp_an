@@ -25,6 +25,7 @@ public class Board extends BoardAbstract {
     private Brick[] brick = new Brick[6];
     private Ball ball;
     private Barrier barrier;
+    private Classification classification;
     
     
     private ListContract lc = new ListContract() {
@@ -118,17 +119,17 @@ public class Board extends BoardAbstract {
 
     @Override
     public ClassificationContract getClassification() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return classification;
     }
 
     @Override
     public void setClassification(ClassificationContract cc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.classification = (Classification) cc;
     }
 
     @Override
     public BrickAbstract[] createBrickArray(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return brick;
     }
 
 }
