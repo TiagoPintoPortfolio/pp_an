@@ -8,9 +8,14 @@ package pp_af_8090301_8150277;
 import game.abstractClasses.BrickAbstract;
 
 /**
- *
- * @author Tiago Pinto
- */
+* Nome: João António Brochado Soares
+* Número: 8090301
+* Turma: T3
+*
+* Nome: Tiago Alexandre Magalhães Fonseca Azevedo Pinto
+* Número: 8150277
+* Turma: T2
+*/
 public class Brick extends BrickAbstract{
     
     private int brickX = 100;

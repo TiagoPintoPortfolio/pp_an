@@ -8,9 +8,14 @@ package pp_af_8090301_8150277;
 import game.abstractClasses.GameBlockAbstract;
 
 /**
- *
- * @author Tiago Pinto
- */
+* Nome: João António Brochado Soares
+* Número: 8090301
+* Turma: T3
+*
+* Nome: Tiago Alexandre Magalhães Fonseca Azevedo Pinto
+* Número: 8150277
+* Turma: T2
+*/
 public class GameBlock extends GameBlockAbstract{
 
     private int blockX = 50;

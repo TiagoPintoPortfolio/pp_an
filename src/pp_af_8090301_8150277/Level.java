@@ -18,13 +18,19 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 /**
- *
- * @author Tiago Pinto
- */
+* Nome: João António Brochado Soares
+* Número: 8090301
+* Turma: T3
+*
+* Nome: Tiago Alexandre Magalhães Fonseca Azevedo Pinto
+* Número: 8150277
+* Turma: T2
+*/
+ 
 public class Level extends LevelAbstract{
 
     private String levelname_;
-    private int[][] bricks={ {0, 1, 0, 1, 1, 0}, {0, 1, 0, 1, 1, 0}};
+    private int[][] bricks={{0, 1, 0, 1, 1, 0}, {0, 1, 0, 1, 1, 0}};
     
     
     private int numberBricks=1;
@@ -44,7 +50,7 @@ public class Level extends LevelAbstract{
 
         try {
 
-            Object obj = parser.parse(new FileReader("/Users/joaosoares/NetBeansProjects/Json/src/json/level0.json"));
+            Object obj = parser.parse(new FileReader("niveis/level0.json"));
 
             JSONObject jsonObject = (JSONObject) obj;
             System.out.println(jsonObject);
@@ -54,13 +60,21 @@ public class Level extends LevelAbstract{
             System.out.println(levelName);
 
             // loop array
-            /*JSONArray board = (JSONArray) jsonObject.get("board");
-            Iterator<Long> iterator = board.iterator();
-            while (iterator.hasNext()) {
-               
-                System.out.println(iterator.next());
-            }*/
-            
+            for(int i = 0;i<5;i++){
+                JSONArray linhas = (JSONArray) jsonObject.get("board");
+                for(int j=0;j<6;j++){
+                    JSONArray colunas = (JSONArray)linhas.get(i);
+                    System.out.println(colunas.get(j));
+                }
+            }
+//            JSONArray linhas = (JSONArray) jsonObject.get("board");
+//            JSONArray colunas = (JSONArray)  board.get(i);
+//            Iterator<Long> iterator = board.iterator();
+//            while (iterator.hasNext()) {
+//               
+//                System.out.println(iterator.next());
+//            }
+//            
             
             
             //Long numberOfBrick = (Long) jsonObject.get("numberOfBrick");
@@ -130,33 +144,32 @@ public class Level extends LevelAbstract{
     @Override
     public BallAbstract getBall() {
         return ball;
+}
 
+    
     @Override
-    public2 void setBall(BallAbstract ba) {
+    public void setBall(BallAbstract ba) {
         this.ball = (Ball) ba;
     }
 
     @Override
     public BarrierAbstract getPaddle() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return paddle;
     }
 
     @Override
     public void setPaddle(BarrierAbstract ba) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.paddle = (Barrier) ba;
     }
 
     @Override
     public String getBrickImageFilePath() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return paddleimag;
     }
 
     @Override
     public void setBrickImageFilePath(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.paddleimag = string;
     }
-
-    
-
     
 }

@@ -9,9 +9,14 @@ import game.interfaces.ClassificationContract;
 import game.interfaces.PlayerContract;
 
 /**
- *
- * @author Tiago Pinto
- */
+* Nome: João António Brochado Soares
+* Número: 8090301
+* Turma: T3
+*
+* Nome: Tiago Alexandre Magalhães Fonseca Azevedo Pinto
+* Número: 8150277
+* Turma: T2
+*/
 public class Classification implements ClassificationContract{
 
     Level l = new Level();

@@ -1,0 +1,15 @@
+{
+	"levelName":"Nivel 0",
+        "board":[ [0, 0, 0, 0, 0, 0], 
+                    [0, 1, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0, 0]
+                ],
+	"numberOfBrick": 1,
+        "brickImagePath": "levels/brick.png",
+        "ballSpeed":1,
+        "ballImagePath": "levels/ball.png",
+        "paddleSpeed":1,
+        "paddleImagePath":"levels/paddle.png"
+}

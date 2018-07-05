@@ -12,10 +12,15 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 /**
- *
- * @author Tiago Pinto
- */
-public class Barrier extends BarrierAbstract implements KeyListener{
+* Nome: João António Brochado Soares
+* Número: 8090301
+* Turma: T3
+*
+* Nome: Tiago Alexandre Magalhães Fonseca Azevedo Pinto
+* Número: 8150277
+* Turma: T2
+*/
+public class Barrier extends BarrierAbstract {
     
     private int speed = 10;
     private int paddleX = 5;
@@ -50,29 +55,6 @@ public class Barrier extends BarrierAbstract implements KeyListener{
     public int getY() {
         return paddleY;
     }
-//
-//    @Override
-//    public void keyTyped(KeyEvent e) {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-//
-//    @Override
-//    public void actionPerformed(ActionEvent e) {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
-//    
-//   public void keyPressed(){
-//   
-//   
-//   }
-//   
-//   public void keyReleased(){
-//   
-//   }
 
-    @Override
-    public void keyTyped(KeyEvent ke) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }

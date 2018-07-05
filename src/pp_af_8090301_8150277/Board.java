@@ -15,9 +15,14 @@ import game.interfaces.PlayerContract;
 import java.util.Arrays;
 
 /**
- *
- * @author Tiago Pinto
- */
+* Nome: João António Brochado Soares
+* Número: 8090301
+* Turma: T3
+*
+* Nome: Tiago Alexandre Magalhães Fonseca Azevedo Pinto
+* Número: 8150277
+* Turma: T2
+*/
 public class Board extends BoardAbstract {
 
     //private Player p = new Player();
@@ -142,8 +147,12 @@ public class Board extends BoardAbstract {
     }
 
     @Override
-    public BrickAbstract[] createBrickArray(int i) {
-        return brick;
+    public BrickAbstract[] createBrickArray(int tam) {
+        Brick[] temp = new Brick[tam];
+        for (int i =0; i<i;i++){
+            temp[i] = new Brick();
+        }
+        return temp;
     }
 
 }

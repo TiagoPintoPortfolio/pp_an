@@ -8,13 +8,24 @@ package pp_af_8090301_8150277;
 import game.interfaces.PlayerContract;
 
 /**
- *
- * @author Tiago Pinto
- */
+* Nome: João António Brochado Soares
+* Número: 8090301
+* Turma: T3
+*
+* Nome: Tiago Alexandre Magalhães Fonseca Azevedo Pinto
+* Número: 8150277
+* Turma: T2
+*/
 public class Player implements PlayerContract{
     
-    private String name = "";
+    private String name; // = "";
     private int totalPontos;
+
+    public Player() {
+        
+        this.name ="";
+        this.totalPontos=0;
+    }
 
     @Override
     public String getName() {
@@ -37,3 +48,5 @@ public class Player implements PlayerContract{
     }
     
 }
+
+
